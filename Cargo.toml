@@ -1,0 +1,12 @@
+[package]
+authors = ["Ceri Storey <cez@necrofish.org.uk>"]
+name = "cr-varkeys"
+version = "0.1.0"
+
+[dependencies]
+quick-error = "1.0.0"
+quickcheck = "0.2.27"
+rand = "0.3.14"
+
+[features]
+unstable = []

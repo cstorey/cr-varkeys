@@ -14,7 +14,7 @@ use cr_varkeys::{Error, encode, decode};
 #[bench] fn encoding_2p40 ( b: &mut test::Bencher )  { bench_encoding ( 1<<40, b )  }
 #[bench] fn encoding_2p48 ( b: &mut test::Bencher )  { bench_encoding ( 1<<48, b )  }
 #[bench] fn encoding_2p56 ( b: &mut test::Bencher )  { bench_encoding ( 1<<56, b )  }
-// #[bench] fn encoding_2p63 ( b: &mut test::Bencher )  { bench_encoding ( 1<<63, b )  }
+#[bench] fn encoding_2p63 ( b: &mut test::Bencher )  { bench_encoding ( 1<<63, b )  }
 
 #[bench] fn decoding_0       ( b: &mut test::Bencher )  { bench_decoding ( 1<<0, b     )  }
 #[bench] fn decoding_2p8    ( b: &mut test::Bencher )  { bench_decoding ( 1<<8, b  )  }
@@ -24,7 +24,7 @@ use cr_varkeys::{Error, encode, decode};
 #[bench] fn decoding_2p40 ( b: &mut test::Bencher )  { bench_decoding ( 1<<40, b )  }
 #[bench] fn decoding_2p48 ( b: &mut test::Bencher )  { bench_decoding ( 1<<48, b )  }
 #[bench] fn decoding_2p56 ( b: &mut test::Bencher )  { bench_decoding ( 1<<56, b )  }
-// #[bench] fn decoding_2p63 ( b: &mut test::Bencher )  { bench_decoding ( 1<<63, b )  }
+#[bench] fn decoding_2p63 ( b: &mut test::Bencher )  { bench_decoding ( 1<<63, b )  }
 
 
 fn bench_encoding(n: usize, b: &mut test::Bencher) {
